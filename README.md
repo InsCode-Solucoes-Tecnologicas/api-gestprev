@@ -27,7 +27,15 @@ docker compose up --build
 | http://localhost:8080/api/schema/ | Contrato OpenAPI |
 | http://localhost:8080/api/admin/ | Admin do Django |
 
-Criar o primeiro usuário:
+Carga inicial (ente Natal e, com `DJANGO_DEBUG=1`, o usuário `dev` com perfil Analista). Pode rodar mais de uma vez:
+
+```bash
+docker compose exec api python manage.py carga_inicial
+```
+
+A senha do `dev` vem de `DEV_USER_PASSWORD` no `.env`; se vazia, é gerada e mostrada na saída. O CNPJ do ente vem de `ENTE_CNPJ` (obrigatório com `DJANGO_DEBUG=0`).
+
+Administrador:
 
 ```bash
 docker compose exec api python manage.py createsuperuser
