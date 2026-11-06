@@ -2,7 +2,7 @@
 
 API da plataforma **GestPrev** — Django + Django REST Framework. Primeiro módulo: Calculadora Previdenciária.
 
-O front fica no repositório [ui-gestprev](https://github.com/ins-batista/ui-gestprev). Os dois conversam pelo contrato OpenAPI publicado em `/api/schema/`.
+O front fica no repositório [ui-gestprev](https://github.com/InsCode-Solucoes-Tecnologicas/ui-gestprev). Os dois conversam pelo contrato OpenAPI publicado em `/api/schema/`.
 
 ## Subir o ambiente completo (um comando)
 
