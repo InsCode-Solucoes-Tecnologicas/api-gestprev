@@ -6,7 +6,7 @@
 set -euo pipefail
 
 : "${GITHUB_TOKEN:?defina GITHUB_TOKEN}"
-DONO="ins-batista"
+DONO="InsCode-Solucoes-Tecnologicas"
 REPOS=(api-gestprev ui-gestprev)
 
 # nome|cor|descricao
